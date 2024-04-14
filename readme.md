@@ -140,6 +140,24 @@ The diagonal cells (from top left to bottom right) show the number of correct pr
 
 The off-diagonal cells show the number of incorrect predictions. For example, the model predicted 'class 0' when the true class was 'class 1' 229 times, and it predicted 'class 1' when the true class was 'class 2' 369 times, and so on.
 
+
+### Suggestions on Improving the Model:
+
+##### Preprocessing Part:
+
+1) Text Normalization and Removing Stop-Word: Normalize the text by converting it to a consistent format. (e.g., replacing "can't" with "cannot") and removing the stop words which is not useful for nlp task (e.g, get rid of "and", "but", "for" ...)
+2) Spelling Correction
+3) Balancing the Dataset: Undersampling or Oversampling with the generative approach (SMOTE)
+4) Extend the dataset
+
+##### Model Part:
+
+1) Hyperparameter Tuning: More parameter try or using random search
+2) Cross-Validation: Use cross-validation techniques to ensure that your model generalizes well to unseen data.
+3) Using Better Pre-trained Model: MobileBERT is kind of "light" model. Use model such as "ROBERTA", "ELECTRA"
+4) More Complex Model Architecture: Using 3 pre-trained model for (headline, pros and cons) to encode reviews and combine them and classify  
+
+
 ### Sources
 
 * Hugging Face Docs and Courses
