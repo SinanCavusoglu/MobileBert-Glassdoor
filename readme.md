@@ -106,7 +106,9 @@ Table of the fine tuning:
 
 [BERT](https://arxiv.org/abs/1810.04805)
 
-![Orginal BERT paper recomends this hyperparameters for fine-tuning (pg 13-14):](image/fine-tunes.png)
+Orginal BERT paper recomends this hyperparameters for fine-tuning (pg 13-14):
+
+![](image/fine-tunes.png)
 
 ### Evaluation
 
